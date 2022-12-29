@@ -1,0 +1,155 @@
+ * { 
+    padding: 0;
+    margin: 0;
+    border: 0;
+    
+}
+
+header {
+    display: block;
+    position: absolute;
+    padding: 5px;
+    top: 0;
+    left: 0;
+    /* border: solid pink; */
+}
+
+#home-button {
+    font-family: monospace;
+    color: white;
+}
+
+#home-button:hover {
+    color: black;
+}
+
+#background {
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+} 
+
+#foreground {
+    width: 700px;
+    height: 500px;
+    margin: 150px auto 5px;
+    display: block;
+}
+
+
+ul {
+    list-style: none;
+    width: 700px;
+    text-align: center;
+    font-family: 'Sora', sans-serif;
+    font-weight: 300;
+    margin: 0 auto;
+}
+
+
+li {
+    display: inline-block;
+    padding: 0 50px;
+    font-size: 20px;
+}
+
+li a {
+    color: black;
+    text-decoration: none;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: beige;
+    z-index: 2;
+
+}
+
+footer nav ul li {
+    font-size: 120%;
+}
+
+.info-list img {
+    height: 230px;
+    width: 230px;
+    float: left;
+}
+
+.info-list {
+    width: 700px;
+    height: 550px;
+    margin: 150px auto;
+    overflow: scroll;
+
+}
+
+.inside-info-list {
+    width: 610px;
+    height: 230px;
+    margin: 15px auto;
+    
+} 
+
+.info-list-text {
+    margin: 0 0 0 10px;
+    /* border: solid green; */
+    width: 370px;
+    height: 220px;
+    display: inline-block;
+    overflow: hidden;
+
+}
+
+
+h2 {
+    text-decoration: underline;
+    font-family: 'Sora', sans-serif;
+    font-weight: 400;
+}
+
+h3 {
+    font-family: 'Sora', sans-serif;
+}
+
+p {
+    /* font-family: 'Sora', sans-serif;
+    font-weight: 200; */
+    font-family: monospace;
+} 
+
+ .about {
+    margin: 55px 150px 0 150px; 
+    
+} 
+
+a:link {
+    color: black;
+    text-decoration: none;
+}
+
+a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(180, 65, 65);
+    text-decoration: none;
+}
+
+a:active {
+    color: black;
+    text-decoration: none;
+}
+
+.tracklist {
+    font-family: monospace;
+    margin: 15px 0 0 15px;
+    line-height: 1.5;
+}
+
