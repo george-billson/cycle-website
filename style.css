@@ -5,13 +5,20 @@
     
 }
 
+html {
+    min-height: 100vh;
+    background-image: url('./images/background2.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
 header {
     display: block;
     position: absolute;
     padding: 5px;
     top: 0;
     left: 0;
-    /* border: solid pink; */
 }
 
 #home-button {
@@ -22,15 +29,6 @@ header {
 #home-button:hover {
     color: black;
 }
-
-#background {
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    position: absolute;
-    top: 0;
-    left: 0;
-} 
 
 #foreground {
     width: 700px;
@@ -63,6 +61,7 @@ li a {
 
 footer {
     position: fixed;
+    overflow-x: scroll;
     bottom: 0;
     width: 100%;
     background-color: beige;
@@ -117,8 +116,6 @@ h3 {
 }
 
 p {
-    /* font-family: 'Sora', sans-serif;
-    font-weight: 200; */
     font-family: monospace;
 } 
 
