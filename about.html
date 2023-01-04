@@ -7,20 +7,26 @@
     <title>About - Cycle</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Sora:wght@200;300;400&display=swap" rel="stylesheet">
+    <script src="./top-nav.js"></script>
 </head>
 
 <header>
-    <!--<a href="index.html"><img id="home-button" src="/Users/georgebillson/Code/cycle-website/images/home-vector.svg"></a>-->
     <div><a id="home-button" href="index.html">home</a></div>
+    
+    <nav class="top-nav">
+        <h4 onclick="revealMenu()">menu</h4>
+        <ul id="clickynav">
+            <li><a href="./index.html">home</a></li>
+            <li><a href="./about.html">about</a></li>
+            <li><a href="./podcast.html">podcast</a></li>
+            <li><a href="./media.html">media</a></li>
+            <li><a href="./contact.html">contact</a></li>
+        </ul>
+    </nav>
 </header>
 
 <body>
-
-    <!--<img id="background" src="./images/background2.png">-->
     <div class="info-list">
-        <br>
-        <br>
-        <br>
         <div class="about">
             <h3>About</h3>
             <br>
@@ -45,15 +51,16 @@
     </div>
     
     <footer>
-        <nav>
+        <nav class="page-navs">
             <ul class="page-navs">
-                <li><a href="about.html">About</a></li>
-                <li><a href="podcast.html">Podcast</a></li>
-                <li><a href="media.html">Media</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./podcast.html">Podcast</a></li>
+                <li><a href="./media.html">Media</a></li>
+                <li><a href="./contact.html">Contact</a></li>
             </ul>
         </nav>
     </footer>
     
 </body>
 </html>
+
