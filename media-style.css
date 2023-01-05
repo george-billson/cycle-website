@@ -1,4 +1,4 @@
- * { 
+* { 
     padding: 0;
     margin: 0;
     border: 0;
@@ -137,17 +137,6 @@ footer nav ul li {
 
 .info-list {
     max-width: 700px;
-    max-height: 500px;
-    margin: 150px auto;
-}
-
- .about {
-    padding: 20px; 
-} 
-
-
-.info-list {
-    max-width: 700px;
     max-height: 550px;
     margin: 150px auto;
     padding: 10px;
@@ -160,35 +149,7 @@ footer nav ul li {
     max-height: 230px;
     margin: 15px auto;
     overflow: hidden; 
-    display: flex;
 }
-
-.info-list img {
-    height: 230px;
-    width: 230px;
-    float: left;
-} 
-
-.info-list-text {
-    padding: 0 0 5px 10px;
-    width: 370px;
-    height: 220px;
-    display: inline-block;
-}
-
-h2 {
-    text-decoration: underline;
-    font-family: 'Sora', sans-serif;
-    font-weight: 400;
-}
-
-h3 {
-    font-family: 'Sora', sans-serif;
-}
-
-p {
-    font-family: monospace;
-} 
 
 a:link {
     color: black;
@@ -209,9 +170,3 @@ a:active {
     color: black;
     text-decoration: none;
 }
-
-/* .tracklist {
-    font-family: monospace;
-    margin: 15px 0 0 15px;
-    line-height: 1.5;
-} */
