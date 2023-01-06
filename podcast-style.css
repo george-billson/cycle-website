@@ -237,9 +237,9 @@ p {
     }
 }
 
-/* MEDIA QUERY: .mobile-info-list-text SMALLER LINE HEIGHT @ <375px */
+/* MEDIA QUERY: .mobile-info-list-text SMALLER LINE HEIGHT @ <480px */
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 480px) {
     .mobile-info-list-text p {
         line-height: 1;
     }
