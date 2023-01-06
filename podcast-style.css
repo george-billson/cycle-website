@@ -237,9 +237,9 @@ p {
     }
 }
 
-/* MEDIA QUERY: .mobile-info-list-text SMALLER LINE HEIGHT @ <480px */
+/* MEDIA QUERY: .mobile-info-list-text SMALLER LINE HEIGHT @ <375px */
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 375px) {
     .mobile-info-list-text p {
         line-height: 1;
     }
@@ -249,3 +249,13 @@ p {
         max-height: 200px;
     } 
 } 
+
+/* MEDIA QUERY: .info-list img SMALLER @ <480px */
+
+@media only screen and (max-width: 480px) {
+
+    .info-list img {
+        max-width: 215px;
+        max-height: 215px;
+    } 
+}
