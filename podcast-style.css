@@ -258,4 +258,8 @@ p {
         max-width: 215px;
         max-height: 215px;
     } 
+
+    .mobile-info-list-text p {
+        line-height: 1;
+    }
 }
