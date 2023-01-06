@@ -178,7 +178,7 @@ a:active {
 .inside-info-list {
     max-width: 610px;
     max-height: 230px;
-    margin: 15px auto 22px;
+    margin: 15px auto 25px;
     overflow: hidden; 
     display: flex;
 }
@@ -236,3 +236,16 @@ p {
         display: none;
     }
 }
+
+/* MEDIA QUERY: .mobile-info-list-text SMALLER LINE HEIGHT @ <375px */
+
+@media only screen and (max-width: 375px) {
+    .mobile-info-list-text p {
+        line-height: 1;
+    }
+
+    .info-list img {
+        max-width: 200px;
+        max-height: 200px;
+    } 
+} 
