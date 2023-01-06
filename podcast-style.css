@@ -178,7 +178,7 @@ a:active {
 .inside-info-list {
     max-width: 610px;
     max-height: 230px;
-    margin: 15px auto;
+    margin: 15px auto 22px;
     overflow: hidden; 
     display: flex;
 }
