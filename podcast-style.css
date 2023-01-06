@@ -1,4 +1,4 @@
- * { 
+* { 
     padding: 0;
     margin: 0;
     border: 0;
@@ -12,6 +12,8 @@ html {
     background-position: center;
     background-size: cover;
 }
+
+/* HOME BUTTON/MOBILE NAV (IN HEADER) */
 
 header {
     display: block;
@@ -57,7 +59,8 @@ header h4:hover {
     display: block;
 }
 
-
+/* DESKTOP BOTTOM NAVS */
+    /* (li and li a styling is inherited by top-nav) */
 
 .page-navs {
     max-width: 700px;
@@ -80,13 +83,47 @@ li a {
     text-decoration: none;
 }
 
-@media only screen and (max-width: 700px) {
-    .foreground-container {
-        max-width: 700px;
-        max-height: 500px;
-        margin: 150px 20px 5px 20px;
-    }
+footer {
+    position: fixed;
+    overflow-x: scroll;
+    bottom: 0;
+    width: 100%;
+    background-color: beige;
+    z-index: 2;
 
+}
+
+footer nav ul li {
+    font-size: 100%;
+}
+
+/* NAV LIST ITEM STYLING - INHERITED BY TOP AND BOTTOM NAVS */
+
+a:link {
+    color: black;
+    text-decoration: none;
+}
+
+a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(180, 65, 65);
+    text-decoration: none;
+}
+
+a:active {
+    color: black;
+    text-decoration: none;
+}
+
+
+/* MEDIA QUERIES: HOME BUTTON IS REPLACED BY TOP-NAV @ 480PX */
+
+
+@media only screen and (max-width: 700px) {
     li {
         display: inline-block;
         padding: 0 20px;
@@ -105,30 +142,25 @@ li a {
 
 }
 
-footer {
-    position: fixed;
-    overflow-x: scroll;
-    bottom: 0;
-    width: 100%;
-    background-color: beige;
-    z-index: 2;
+@media only screen and (min-width: 480px) {
+    .top-nav {
+        display: none;
+    }
 
 }
 
-footer nav ul li {
-    font-size: 100%;
+@media only screen and (max-width: 480px) {
+    ul {
+        display: none;
+    }
+
+    .clickynav {
+        display: block;
+    }
+
 }
 
-.info-list {
-    max-width: 700px;
-    max-height: 500px;
-    margin: 150px auto;
-}
-
- .about {
-    padding: 20px; 
-} 
-
+/* CENTRAL INFO-LIST CONTAINER */
 
 .info-list {
     max-width: 700px;
@@ -138,6 +170,10 @@ footer nav ul li {
     overflow: scroll;
 
 }
+
+/* CONTAINER FOR EACH MIX INCL:
+    IMG STYLING
+    TEXT STYLING (H2,P) */
 
 .inside-info-list {
     max-width: 610px;
@@ -160,6 +196,9 @@ footer nav ul li {
     display: inline-block;
 }
 
+.mobile-info-list-text {
+    display: none;
+}
 
 h2 {
     text-decoration: underline;
@@ -167,72 +206,33 @@ h2 {
     font-weight: 400;
 }
 
-h3 {
-    font-family: 'Sora', sans-serif;
-}
-
 p {
     font-family: monospace;
 } 
 
-a:link {
-    color: black;
-    text-decoration: none;
-}
-
-a:visited {
-    color: black;
-    text-decoration: none;
-}
-
-a:hover {
-    color: rgb(180, 65, 65);
-    text-decoration: none;
-}
-
-a:active {
-    color: black;
-    text-decoration: none;
-}
-
-/* .tracklist {
-    font-family: monospace;
-    margin: 15px 0 0 15px;
-    line-height: 1.5;
-} */
-
-/* default behaviour - top-nav is hidden */
-
-@media only screen and (min-width: 480px) {
-    .top-nav {
-        display: none;
-    }
-
-    .mobile-info-list-text {
-        display: none;
-    }
-
-}
+/* MEDIA QUERY: .desktop-info-list-text DISAPPEARS @ <480px */
 
 @media only screen and (max-width: 480px) {
-    ul {
-        display: none;
-    }
-
-    .clickynav {
-        display: block;
-    }
-
     .desktop-info-list-text {
         display: none;
     }
+} 
 
+/* MEDIA QUERY: .mobile-info-list-text APPEARS @ <480px */
+
+@media only screen and (max-width: 480px) {
     .mobile-info-list-text {
         padding: 0 0 5px 10px;
         width: 370px;
         height: 220px;
         display: inline-block;
     }
+}
 
+/* MEDIA QUERY: .mobile-info-list-text DISAPPEARS @ >480px */
 
+@media only screen and (min-width: 480px) {
+    .mobile-info-list-text {
+        display: none;
+    }
 }
